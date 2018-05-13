@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>tweeter</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
-  </head>
-  <body class="sans-serif black bg-white">
+<head>
+  <meta charset="utf-8">
+  <title>tweeter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+</head>
+<body class="w-100 sans-serif black bg-white">
+  <header class="ph3 pv4">
     <h1 id='title'>tweet</h1>
+  </header>
+  <main class="ph3 pv4">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </main>
+  <footer class="ph3 pv4 bg-grey">
+    tweetbot
+  </footer>
 
-    <script>
+  <script>
 
-      const songlist = [
-        {songTitle:"Decision", artist:"Secret Nuclear", service:"Spotify", url:"https://bit.ly/saveWHI002"},
-        {songTitle:"Mid-century Paranoia", artist:"Secret Nuclear", service:"Spotify", url:"https://bit.ly/savWHI002"},
-        {songTitle:"Vega", artist:"Secret Nuclear", service:"Spotify", url:"http://bit.ly/saveWHI003"}
-      ]
+  const songlist = [
+    {songTitle:"Decision", artist:"Secret Nuclear", service:"Spotify", url:"https://bit.ly/saveWHI002"},
+    {songTitle:"Mid-century Paranoia", artist:"Secret Nuclear", service:"Spotify", url:"https://bit.ly/savWHI002"},
+    {songTitle:"Vega", artist:"Secret Nuclear", service:"Spotify", url:"http://bit.ly/saveWHI003"}
+  ]
 
-      const track = songlist[Math.floor(Math.random()*songlist.length)];;
+  const track = songlist[Math.floor(Math.random()*songlist.length)];;
 
-      let tweet = `Stream "${track.songTitle}" by ${track.artist} on #${track.service} - ${track.url}`;
+  let tweet = `Stream "${track.songTitle}" by ${track.artist} on #${track.service} - ${track.url}`;
+  console.log(tweet);
 
-      console.log(tweet);
+  var newDiv = document.createElement("p");
+  var newContent = document.createTextNode(tweet);
+  newDiv.appendChild(newContent);
+  // add the newly created element and its content into the DOM
+  var currentDiv = document.getElementById("title");
+  document.body.insertBefore(newDiv, currentDiv);
 
-      var newDiv = document.createElement("p");
-      var newContent = document.createTextNode(tweet);
-      newDiv.appendChild(newContent);
-      // add the newly created element and its content into the DOM
-      var currentDiv = document.getElementById("title");
-      document.body.insertBefore(newDiv, currentDiv);
+  </script>
 
-
-
-    </script>
-
-  </body>
+</body>
 </html>

@@ -11,7 +11,10 @@
     <h1 id='title'>tweet</h1>
   </header>
   <main class="ph3 pv4">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <div id="content" class="">
+      content
+    </div>
+      <a class="f6 link dim ph3 pv2 mb2 dib white bg-black" href="#0">Button Text</a>
   </main>
   <footer class="ph3 pv4 bg-grey">
     tweetbot
@@ -34,7 +37,7 @@
   var newContent = document.createTextNode(tweet);
   newDiv.appendChild(newContent);
   // add the newly created element and its content into the DOM
-  var currentDiv = document.getElementById("title");
+  var currentDiv = document.getElementById("content");
   document.body.insertBefore(newDiv, currentDiv);
 
   </script>

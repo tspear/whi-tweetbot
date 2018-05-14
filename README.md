@@ -6,3 +6,9 @@ MVP:
 3. Compose post linking to the track
 4. post to Twitter
 
+iterations?
+- post to buffer/rss/IFTT?
+- add images/video
+- auto generate bitly link
+
+

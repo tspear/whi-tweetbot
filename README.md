@@ -1,4 +1,4 @@
-# whi-tweetbot
+# whi-tweetbot - Spotify connected social bot.
 
 MVP:
 1. Get all tracks for a selected artist/artists from spotify API
@@ -6,7 +6,7 @@ MVP:
 3. Compose post linking to the track
 4. post to Twitter
 
-iterations?
+Possible features/iterations:
 - post to buffer/rss/IFTT?
 - add images/video
 - auto generate bitly link

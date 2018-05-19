@@ -1,0 +1,23 @@
+{
+  "name": "whi-tweetbot",
+  "version": "1.0.0",
+  "description": "MVP: 1. Get all tracks for a selected artist/artists from spotify API 2. Select one at random 3. Compose post linking to the track 4. post to Twitter",
+  "main": "app.js",
+  "dependencies": {
+    "spotify-web-api-node": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tspear/whi-tweetbot.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tspear/whi-tweetbot/issues"
+  },
+  "homepage": "https://github.com/tspear/whi-tweetbot#readme"
+}

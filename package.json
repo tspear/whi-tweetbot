@@ -4,7 +4,8 @@
   "description": "MVP: 1. Get all tracks for a selected artist/artists from spotify API 2. Select one at random 3. Compose post linking to the track 4. post to Twitter",
   "main": "app.js",
   "dependencies": {
-    "spotify-web-api-node": "^3.1.1"
+    "spotify-web-api-node": "^3.1.1",
+    "twit": "^2.2.9"
   },
   "devDependencies": {},
   "scripts": {

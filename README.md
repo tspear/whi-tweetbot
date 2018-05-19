@@ -10,3 +10,8 @@ Possible features/iterations:
 - post to buffer/rss/IFTT?
 - add images/video
 - auto generate bitly link
+
+
+Dependencies:
+Twit - https://github.com/ttezel/twit
+spotify-web-api-node - https://github.com/thelinmichael/spotify-web-api-node

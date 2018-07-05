@@ -5,6 +5,7 @@
   "main": "app.js",
   "dependencies": {
     "spotify-web-api-node": "^3.1.1",
+    "superagent": "^3.8.3",
     "twit": "^2.2.9"
   },
   "devDependencies": {},
@@ -15,8 +16,11 @@
     "type": "git",
     "url": "git+https://github.com/tspear/whi-tweetbot.git"
   },
-  "author": "",
+  "author": "Tim Spear",
   "license": "ISC",
+  "bin": {
+    "plugger": "./plugger.js"
+  },
   "bugs": {
     "url": "https://github.com/tspear/whi-tweetbot/issues"
   },
